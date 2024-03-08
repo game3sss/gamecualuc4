@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tetris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.12/css/all.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="column-container" id="Tetris">
+  <div class="column-1">
+    <canvas width="150" height="300" id="main-screen">lỗi</canvas>
+    <table>
+      <tr>
+        <td><i class="fas fa-arrow-alt-circle-left"></i><i class="fas fa-arrow-alt-circle-right"></i></td>
+        <td>Di chuyển</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-arrow-alt-circle-down"></i></td>
+        <td>Phán quyết</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-arrow-alt-circle-up"></i></td>
+        <td>Vòng xoay</td>
+      </tr>
+    </table>
+  </div>
+  <div class="column-2">
+    <div class="group">
+      <p>tiếp</p>
+      <canvas width="50" height="50" id="sub-screen">error</canvas>
+    </div>
+    <div class="group">
+      <p>điểm</p>
+      <div id="score">
+      </div>
+    </div>
+    <div class="group">
+      <p id="play">Chơi</p>
+    </div>
+  </div>
+  <canvas width="130" height="30" id="game-over">error</canvas>
+</div>
+<p class="credit">
+  Nguyễn Tiến Lực 
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
